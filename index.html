@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/TTFirsNeue-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/TTFirsNeue-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/TTFirsNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="shortcut icon" href="img/icon.svg" type="image/svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>High Pass</title>
+</head>
+
+<body>
+  <header class="header">
+
+    <!-- Menu block -->
+    <div class="header__menu">
+      <div class="container header__menu-container">
+
+        <img class="logo header__logo" src="img/sprite.svg#logo" alt="Логотип">
+
+        <nav class="nav header__nav header__nav-desk">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#about">О студии</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#projects">Наши проекты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#services">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#masters">Мастер-классы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Social block -->
+        <ul class="networks header__networks">
+          <li class="networks__item">
+            <a href="" aria-label="Ссылка на инстаграм">
+              <svg class="icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#inst" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="networks__item">
+            <a href="" aria-label="Ссылка на фейсбук">
+              <svg class="icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#fb" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="networks__item">
+            <a href="" aria-label="Ссылка на вконтакте">
+              <svg class="icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#vk" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="header__tablet-block">
+          <a aria-label="телефон 849542423532" class="header__tel header__tel-tablet" href="tel:+749542423532">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#phone" />
+            </svg>
+            +7 (495) 42-423-532
+          </a>
+
+          <form class="header__form">
+            <input class="header__inp header__inp-tablet" type="text" placeholder="Что будем иcкать?"
+              aria-label="Введите, что нужно найти на сайте">
+
+            <button class="header__search" type="button" aria-label="Кнопка поиска">
+              <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#search" />
+              </svg>
+            </button>
+
+            <button class="header__close" type="button" aria-label="Кнопка закрытия строки поиска">
+              <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#header__close" />
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Block phone and search -->
+    <div class="header__submenu">
+      <div class="container header__submenu-container">
+
+        <button class="header__btn" type="button" aria-label="Кнопка открытия меню">
+          <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#burger" />
+          </svg>
+        </button>
+
+        <a class="header__tel header__tel-desk" href="tel:+749542423532">
+          <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#phone" />
+          </svg>
+          +7 (495) 42-423-532
+        </a>
+
+        <form class="header__form header__form-desk">
+          <button class="header__search" type="button" aria-label="Кнопка поиска">
+            <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#search" />
+            </svg>
+          </button>
+          <input class="header__inp" type="text" placeholder="Что будем иcкать?"
+            aria-label="Введите, что нужно найти на сайте">
+        </form>
+
+        <nav class="nav header__nav header__nav-tablet">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#about">О студии</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#projects">Наши проекты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#services">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#masters">Мастер-классы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Burger -->
+        <div class="burger">
+
+          <button class="burger__close" type="button" aria-label="Кнопка закрытия меню">
+            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#close" />
+            </svg>
+          </button>
+
+          <ul class="burger__menu">
+            <li class="burger__item">
+              <a class="burger__link" href="#about">О студии</a>
+            </li>
+            <li class="burger__item">
+              <a class="burger__link" href="#projects">Наши проекты</a>
+            </li>
+            <li class="burger__item">
+              <a class="burger__link" href="#services">Услуги</a>
+            </li>
+            <li class="burger__item">
+              <a class="burger__link" href="#masters">Мастер-классы</a>
+            </li>
+            <li class="burger__item">
+              <a class="burger__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+
+          <a aria-label="телефон 849542423532" class="header__tel header__tel-desk" href="tel:+749542423532">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#phone" />
+            </svg>
+            +7 (495) 42-423-532
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <!-- WORKS section -->
+    <section class="works">
+      <div class="container works__container">
+
+        <article class="works__event">
+          <p class="works__organizer">Мастер-класс от Игоря Робова</p>
+          <h2 class="works__title">Неоновый фотосет 2.0 7 июля 20:00</h2>
+          <a class="btn btn__entire btn__orange" href="">Узнать больше</a>
+          <span class="hashtag works__hashtag">#мастеркласс</span>
+        </article>
+
+        <div class="works__examples">
+          <h3 class="works__heading">Работы участников предыдущего мастер-класса</h3>
+          <ul class="works__list">
+            <li class="works__item works__item-one">
+              <picture class="works__example">
+                <source srcset="img/works/works__1.webp" media="(min-width: 1025px)">
+                <source srcset="img/works/works__1_1024.webp" media="(min-width: 769px)">
+                <source srcset="img/works/works__1_768.webp" media="(min-width: 451px)">
+                <source srcset="img/works/works__1_320.webp" media="(min-width: 320px)">
+                <img src="img/works/works__1.jpg" alt="Пример работ №1">
+              </picture>
+            </li>
+            <li class="works__item works__item-two">
+              <picture class="works__example">
+                <source srcset="img/works/works__2.webp" media="(min-width: 1025px)">
+                <source srcset="img/works/works__2_1024.webp" media="(min-width: 769px)">
+                <source srcset="img/works/works__2_768.webp" media="(min-width: 451px)">
+                <source srcset="img/works/works__2_320.webp" media="(min-width: 320px)">
+                <img src="img/works/works__2.jpg" alt="Пример работ №2">
+              </picture>
+            </li>
+            <li class="works__item works__item-three">
+              <picture class="works__example">
+                <source srcset="img/works/works__3.webp" media="(min-width: 1025px)">
+                <source srcset="img/works/works__3_1024.webp" media="(min-width: 769px)">
+                <source srcset="img/works/works__3_768.webp" media="(min-width: 451px)">
+                <source srcset="img/works/works__3_320.webp" media="(min-width: 320px)">
+                <img src="img/works/works__3.jpg" alt="Пример работ №3">
+              </picture>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT section -->
+    <section id="about" class="about">
+      <div class="container about__container">
+
+        <h2 class="title about__title">О студии</h2>
+
+        <p class="parag about__parag">В рамках спецификации современных стандартов, интерактивные прототипы,
+          инициированные исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы
+          неутешительны: высокотехнологичная концепция общественного уклада требует от нас анализа соответствующих
+          условий активизации! Следует отметить, что семантический разбор внешних противодействий фиксирует
+          необходимость распределения внутренних резервов и ресурсов. Безусловно, граница обучения кадров предоставляет
+          широкие возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень
+          погружения предполагает независимые способы реализации новых принципов формирования материально-технической и
+          кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только методом
+          политического участия и нарушающими общечеловеческие нормы этики.</p>
+
+        <div class="about__right">
+          <div class="about__camera"></div>
+          <strong class="caption about__caption">Подписаться на рассылку</strong>
+          <form class="about__form">
+            <label class="about__label">
+              <span class="about__hint" aria-label="Подсказка: недопустимый формат почты">Недопустимый формат</span>
+              <input class="field about__inp" type="email" placeholder="E-mail" required aria-label="Введите почту">
+            </label>
+            <button class="btn about__btn">Отправить</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS section -->
+    <section id="projects" class="projects">
+      <div class="container projects__container">
+
+        <div class="projects__swiper-upper">
+
+          <h2 class="title projects__title">Наши проекты</h2>
+
+          <ul class="projects__tabs projects__tabs-mobile">
+            <li class="projects__li">
+              <button type="button" class="projects__tab projects__tab-active"
+                aria-label="Первая вкладка со списком проектов">1</button>
+            </li>
+            <li class="projects__li">
+              <button type="button" class="projects__tab" aria-label="Вторая вкладка со списком проектов">2</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="projects__holder projects__holder-active">
+          <ul class="projects__list projects__list-upper">
+            <li class="projects__item projects__item-common">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-1/projects__slide-1.1.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.1_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.1_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-1/projects__slide-1.1.jpg" alt="Проект №1">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">Синтетически, смешаны с не уникальными данными до
+                    степени...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">16 июня</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#пейзаж</span>
+            </li>
+
+            <li class="projects__item projects__item-common">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-1/projects__slide-1.2.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.2_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.2_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-1/projects__slide-1.2.jpg" alt="Проект №2">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">В своём стремлении улучшить опыт мы упускаем, что
+                    явные...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">28 мая</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#портрет</span>
+            </li>
+
+            <li class="projects__item projects__item-common">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-1/projects__slide-1.3.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.3_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.3_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-1/projects__slide-1.3.jpg" alt="Проект №3">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">Равным образом, высокое качество позиционных...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">14 мая</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#предмет</span>
+            </li>
+
+            <li class="projects__item
+                projects__item-common projects__item-common_tablet">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-2/projects__slide-2.4.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.4_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.4_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-2/projects__slide-2.4.jpg" alt="Проект №1">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">Равным образом, сложившаяся структура
+                    организации...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">15 февраля</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#пейзаж</span>
+            </li>
+
+            <li class="projects__item projects__item-huge projects__item-huge_desk projects__item-huge_fuji">
+              <div class="projects__upper">
+                <div class="date projects__date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day">9 апреля</span>
+                </div>
+                <h3 class="projects__heading">Cемантический разбор</h3>
+                <span class="content projects__content">
+                  В рамках спецификации современных стандартов, интерактивные прототипы
+                </span>
+              </div>
+              <a href="" class="btn btn__entire projects__btn">О проекте</a>
+              <span class="hashtag projects__hashtag">#fuji</span>
+            </li>
+          </ul>
+
+          <ul class="projects__list projects__list-lower">
+            <li
+              class="projects__item projects__item-huge projects__item-huge_upper projects__item-huge_tablet projects__item-huge_fuji">
+              <div class="projects__upper">
+                <div class="date projects__date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day">9 апреля</span>
+                </div>
+                <h3 class="projects__heading">Cемантический разбор</h3>
+                <span class="content projects__content">
+                  В рамках спецификации современных стандартов, интерактивные прототипы
+                </span>
+              </div>
+              <a href="" class="btn btn__entire projects__btn">О проекте</a>
+              <span class="hashtag projects__hashtag">#fuji</span>
+            </li>
+
+            <li class="projects__item projects__item-huge projects__item-huge_lower projects__item-huge_oblivion">
+              <div class="projects__upper">
+                <div class="date projects__date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day">20 марта</span>
+                </div>
+                <h3 class="projects__heading">Забвение</h3>
+                <span class="content projects__content">
+                  Играет важную роль в формировании глубокомысленных рассуждений
+                </span>
+              </div>
+              <a href="" class="btn btn__entire projects__btn">О проекте</a>
+              <span class="hashtag projects__hashtag">#проектзабвение</span>
+            </li>
+
+            <li class="projects__item projects__item-common projects__item-common_upper">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-1/projects__slide-1.6.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.6_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.6_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-1/projects__slide-1.6.jpg" alt="Проект №6">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">Как принято считать, многие известные личности и по
+                    сей день остаются уделом либералов...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">16 июня</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#ретушь</span>
+            </li>
+
+            <li class="projects__item projects__item-common projects__item-common_lower">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-1/projects__slide-1.7.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.7_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-1/projects__slide-1.7_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-1/projects__slide-1.7.jpg" alt="Проект №7">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">С учётом сложившейся международной обстановки, новая
+                    модель организационной...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">1 марта</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#портрет</span>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="projects__holder">
+
+          <ul class="projects__list-lower">
+            <li class="projects__item projects__item-huge projects__item-huge_upper projects__item-huge_portrait">
+              <div class="projects__upper">
+                <div class="date projects__date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day">24 февраля</span>
+                </div>
+                <h3 class="projects__heading">Спорная точка зрения</h3>
+                <span class="content projects__content">
+                  Ясность нашей позиции очевидна: убеждённость некоторых оппонентов
+                </span>
+              </div>
+              <a href="" class="btn btn__entire projects__btn">О проекте</a>
+              <span class="hashtag projects__hashtag">#портрет</span>
+            </li>
+
+            <li class="projects__item projects__item-common projects__item-common_upper">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-2/projects__slide-2.2.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.2_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.2_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-2/projects__slide-2.2.jpg" alt="Проект №1">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">Идейные соображения высшего порядка, а также
+                    убеждённость некоторых оппонентов...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">20 февраля</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#ретушь</span>
+            </li>
+
+            <li class="projects__item projects__item-common projects__item-common_lower">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-2/projects__slide-2.3.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.3_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.3_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-2/projects__slide-2.3.jpg" alt="Проект №1">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">Прежде всего, повышение уровня гражданского сознания
+                    говорит о возможностях приоритизации...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">18 февраля</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#портрет</span>
+            </li>
+
+            <li
+              class="projects__item projects__item-huge projects__item-huge_tablet projects__item-huge_lower projects__item-huge_jazz">
+              <div class="projects__upper">
+                <div class="date projects__date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day">2 февраля</span>
+                </div>
+                <h3 class="projects__heading">Задания по разработке своевременного</h3>
+                <span class="content projects__content">
+                  Повседневная практика показывает, что сложившаяся структура организации играет важную роль
+                </span>
+              </div>
+              <a href="" class="btn btn__entire projects__btn">О проекте</a>
+              <span class="hashtag projects__hashtag">#fuji</span>
+            </li>
+          </ul>
+
+          <ul class="projects__list-upper">
+            <li class="projects__item
+                projects__item-common
+                projects__item-common_desk">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-2/projects__slide-2.4.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.4_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.4_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-2/projects__slide-2.4.jpg" alt="Проект №1">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">Равным образом, сложившаяся структура
+                    организации...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">15 февраля</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#пейзаж</span>
+            </li>
+
+            <li class="projects__item projects__item-common">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-2/projects__slide-2.5.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.5_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.5_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-2/projects__slide-2.5.jpg" alt="Проект №1">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">Безусловно, реализация намеченных плановых заданий
+                    обеспечивает...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">10 февраля</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#предмет</span>
+            </li>
+
+            <li class="projects__item projects__item-common">
+              <figure class="projects__figure">
+                <picture class="projects__img">
+                  <source srcset="img/projects/slide-2/projects__slide-2.6.webp" media="(min-width: 1700px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.6_1024.webp" media="(min-width: 577px)">
+                  <source srcset="img/projects/slide-2/projects__slide-2.6_320.webp" media="(min-width: 320px)">
+                  <img src="img/projects/slide-2/projects__slide-2.6.jpg" alt="Проект №1">
+                </picture>
+                <figcaption class="projects__figcaption">
+                  <a href="" class="projects__headline btn__entire">Безусловно, курс на социальный национальный...</a>
+                  <div class="date">
+                    <svg class="date__calendar projects__calendar" width="12" height="14" viewBox="0 0 12 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#calendar" />
+                    </svg>
+                    <span class="projects__day date__day">7 февраля</span>
+                  </div>
+                </figcaption>
+              </figure>
+              <span class="hashtag projects__hashtag">#пейзаж</span>
+            </li>
+
+            <li
+              class="projects__item projects__item-huge projects__item-huge_desk projects__item-huge_lower projects__item-huge_jazz">
+              <div class="projects__upper">
+                <div class="date projects__date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day">2 февраля</span>
+                </div>
+                <h3 class="projects__heading">Задания по разработке своевременного</h3>
+                <span class="content projects__content">
+                  Повседневная практика показывает, что сложившаяся структура организации играет важную роль
+                </span>
+              </div>
+              <a href="" class="btn btn__entire projects__btn">О проекте</a>
+              <span class="hashtag projects__hashtag">#fuji</span>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="projects__tabs projects__tabs_desk">
+          <li class="projects__li">
+            <button type="button" class="projects__tab projects__tab-active"
+              aria-label="Первая вкладка со списком проектов">1</button>
+          </li>
+          <li class="projects__li">
+            <button type="button" class="projects__tab" aria-label="Вторая вкладка со списком проектов">2</button>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- SERVICES section -->
+    <section id="services" class="services">
+      <div class="container services__container">
+
+        <div class="services__left">
+
+          <h2 class="title services__title services__title-left">Услуги студии</h2>
+
+          <ul class="services__tabs">
+            <li class="services__li">
+              <button class="services__tab services__tab-active" type="button">Основной перечень</button>
+            </li>
+            <li class="services__li">
+              <button class="services__tab" type="button">Услуги по ретуши</button>
+            </li>
+          </ul>
+
+          <ul class="services__list services__list_main services__list-active">
+            <li class="services__item services__item-desk">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/main/main__service-1.webp" media="(min-width: 1151px)">
+                  <source srcset="img/services/main/main__service-1_1024.webp" media="(min-width: 901px)">
+                  <source srcset="img/services/main/main__service-1_768.webp" media="(min-width: 451px)">
+                  <source srcset="img/services/main/main__service-1_320.webp" media="(min-width: 320px)">
+                  <img src="img/services/main/main__service-1.jpg" alt="Услуга №1">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <span class="services__upper">
+                      <strong class="services__heading">
+                        Высокий уровень вовлечения
+                      </strong>
+                      <span class="content services__content">Высокий уровень вовлечения представителей целевой
+                        аудитории является четким доказательством простого факта.</span>
+                    </span>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item services__item-tablet">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/main/main__service-1.webp" media="(min-width: 1151px)">
+                  <source srcset="img/services/main/main__service-1_1024.webp" media="(min-width: 901px)">
+                  <source srcset="img/services/main/main__service-1_768.webp" media="(min-width: 451px)">
+                  <source srcset="img/services/main/main__service-1_320.webp" media="(min-width: 320px)">
+                  <img src="img/services/main/main__service-1.jpg" alt="Услуга №1">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <span class="services__upper">
+                      <strong class="services__heading">
+                        Высокий уровень вовлечения
+                      </strong>
+                      <span class="content services__content">Высокий уровень вовлечения представителей целевой
+                        аудитории является четким доказательством...</span>
+                    </span>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/main/main__service-2.webp" media="(min-width: 1151px)">
+                  <source srcset="img/services/main/main__service-2_1024.webp" media="(min-width: 901px)">
+                  <source srcset="img/services/main/main__service-2_768.webp" media="(min-width: 451px)">
+                  <source srcset="img/services/main/main__service-2_320.webp" media="(min-width: 320px)">
+                  <img src="img/services/main/main__service-2.jpg" alt="Услуга №2">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <span class="services__upper">
+                      <strong class="services__heading">
+                        Диаграммы связей
+                      </strong>
+                      <span class="content services__content">Значимость этих проблем настолько очевидна, что реализация
+                        намеченных плановых заданий влечет за собой процесс.</span>
+                    </span>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item services__item-desk">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/main/main__service-3.webp" media="(min-width: 1151px)">
+                  <source srcset="img/services/main/main__service-3_1024.webp" media="(min-width: 901px)">
+                  <source srcset="img/services/main/main__service-3_768.webp" media="(min-width: 451px)">
+                  <source srcset="img/services/main/main__service-3_320.webp" media="(min-width: 320px)">
+                  <img src="img/services/main/main__service-3.jpg" alt="Услуга №3">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <span class="services__upper">
+                      <strong class="services__heading">
+                        Высокотехнологичная концепция
+                      </strong>
+                      <span class="content services__content">В частности, убеждённость некоторых оппонентов
+                        способствует подготовке и реализации анализа существующих паттернов.</span>
+                    </span>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item services__item-tablet">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/main/main__service-3.webp" media="(min-width: 1151px)">
+                  <source srcset="img/services/main/main__service-3_1024.webp" media="(min-width: 901px)">
+                  <source srcset="img/services/main/main__service-3_768.webp" media="(min-width: 451px)">
+                  <source srcset="img/services/main/main__service-3_320.webp" media="(min-width: 320px)">
+                  <img src="img/services/main/main__service-3.jpg" alt="Услуга №3">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <span class="services__upper">
+                      <strong class="services__heading">
+                        Высокотехнологичная концепция
+                      </strong>
+                      <span class="content services__content">В частности, убеждённость некоторых оппонентов
+                        способствует подготовке и реализации анализа существующих...</span>
+                    </span>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/main/main__service-4.webp" media="(min-width: 1151px)">
+                  <source srcset="img/services/main/main__service-4_1024.webp" media="(min-width: 901px)">
+                  <source srcset="img/services/main/main__service-4_768.webp" media="(min-width: 451px)">
+                  <source srcset="img/services/main/main__service-4_320.webp" media="(min-width: 320px)">
+                  <img src="img/services/main/main__service-4.jpg" alt="Услуга №4">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <span class="services__upper">
+                      <span class="services__heading services__heading_penultimate">
+                        Сложившаяся структура организации
+                      </span>
+                      <span class="content services__content">Кстати, сторонники тоталитаризма в науке будут объединены
+                        в целые кластеры себе подобных.</span>
+                    </span>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/main/main__service-5.webp" media="(min-width: 1151px)">
+                  <source srcset="img/services/main/main__service-5_1024.webp" media="(min-width: 901px)">
+                  <source srcset="img/services/main/main__service-5_768.webp" media="(min-width: 451px)">
+                  <source srcset="img/services/main/main__service-5_320.webp" media="(min-width: 320px)">
+                  <img src="img/services/main/main__service-5.jpg" alt="Услуга №5">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <span class="services__upper">
+                      <span class="services__heading services__heading_last">
+                        Внутренние резервы и ресурсы
+                      </span>
+                      <span class="content services__content">Банальные, но неопровержимые выводы, а также ключевые
+                        особенности структуры проекта являются только методом.</span>
+                    </span>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+
+          <ul class="services__list services__list_retouch">
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-1.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-1_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-1_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-1.jpg" alt="Услуга №6">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <strong class="services__heading">
+                      Принимая во внимание показатели
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-2.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-2_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-2_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-2.jpg" alt="Услуга №7">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <strong class="services__heading">
+                      Таким образом, выбранный нами...
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-3.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-3_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-3_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-3.jpg" alt="Услуга №8">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <strong class="services__heading">
+                      Также как высокое качество...
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-4.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-4_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-4_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-4.jpg" alt="Услуга №9">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <strong class="services__heading">
+                      Безусловно, семантический разбор...
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-5.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-5_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-5_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-5.jpg" alt="Услуга №10">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="btn__entire services__link">
+                    <strong class="services__heading">
+                      Внезапно, предприниматели в интернете...
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-6.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-6_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-6_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-6.jpg" alt="Услуга №11">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <strong class="services__heading">
+                      Есть над чем подумать: активные...
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-7.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-7_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-7_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-7.jpg" alt="Услуга №12">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <strong class="services__heading">
+                      Сделанные на базе аналитики выводы...
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-8.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-8_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-8_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-8.jpg" alt="Услуга №13">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <strong class="services__heading">
+                      Как принято считать, сторонники...
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-9.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-9_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-9_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-9.jpg" alt="Услуга №14">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <strong class="services__heading">
+                      Задача организации, в особенности...
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="services__item">
+              <figure class="services__figure">
+                <picture class="services__img">
+                  <source srcset="img/services/retouching/retouch__service-10.webp" media="(min-width: 1351px)">
+                  <source srcset="img/services/retouching/retouch__service-10_1024.webp" media="(min-width: 769px)">
+                  <source srcset="img/services/retouching/retouch__service-10_768.webp" media="(min-width: 320px)">
+                  <img src="img/services/retouching/retouch__service-10.jpg" alt="Услуга №15">
+                </picture>
+                <figcaption class="services__figcaption">
+                  <a href="" class="services__link btn__entire">
+                    <strong class="services__heading">
+                      Активно развивающиеся страны...
+                    </strong>
+                    <span class="services__more">
+                      Подробнее
+                      <svg class="services__arrow" width="19" height="14" viewBox="0 0 19 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#arrow" />
+                      </svg>
+                    </span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+
+        <div class="services__right">
+          <article class="services__article">
+            <strong class="services__action">Акция!</strong>
+            <span class="services__date">Только в июне</span>
+            <img class="services__sale" src="img/sprite.svg#sale" alt="Скидка 20%">
+            <span class="content services__desc">1,5 часа портретной съемки + ретушь 10 снимков</span>
+            <a href="" class="btn btn__orange btn__entire">Узнать больше</a>
+          </article>
+
+          <h3 class="title services__title services__title_right">Выполненные работы</h3>
+
+          <ul class="services__works services__works_active">
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-1.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-1_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-1_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-1.jpg" alt="Работа №1">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-2.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-2_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-2_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-2.jpg" alt="Работа №2">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-3.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-3_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-3_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-3.jpg" alt="Работа №3">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-4.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-4_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-4_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-4.jpg" alt="Работа №4">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-5.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-5_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-5_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-5.jpg" alt="Работа №5">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-6.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-6_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-6_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-6.jpg" alt="Работа №6">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-7.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-7_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-7_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-7.jpg" alt="Работа №7">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-8.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-8_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-8_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-8.jpg" alt="Работа №8">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-9.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-9_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-9_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-9.jpg" alt="Работа №9">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-10.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-10_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-10_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-10.jpg" alt="Работа №10">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-11.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-11_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-11_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-11.jpg" alt="Работа №11">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-12.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-12_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-12_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-12.jpg" alt="Работа №12">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-13.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-13_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-13_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-13.jpg" alt="Работа №13">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-14.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-14_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-14_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-14.jpg" alt="Работа №14">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-15.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-15_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-15_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-15.jpg" alt="Работа №15">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/main/main__work-16.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/main/main__work-16_1024.webp" media="(min-width: 577px)">
+                <source srcset="img/services/main/main__work-16_320.webp" media="(min-width: 320px)">
+                <img src="img/services/main/main__work-16.jpg" alt="Работа №16">
+              </picture>
+            </li>
+          </ul>
+
+          <ul class="services__works">
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-1.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-1_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-1.jpg" alt="Работа №17">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-2.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-2_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-2.jpg" alt="Работа №18">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-3.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-3_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-3.jpg" alt="Работа №19">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-4.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-4_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-4.jpg" alt="Работа №20">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-5.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-5_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-5.jpg" alt="Работа №21">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-6.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-6_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-6.jpg" alt="Работа №22">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-7.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-7_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-7.jpg" alt="Работа №23">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-8.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-8_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-8.jpg" alt="Работа №24">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-9.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-9_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-9.jpg" alt="Работа №25">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-10.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-10_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-10.jpg" alt="Работа №26">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-11.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-11_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-11.jpg" alt="Работа №27">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-12.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-12_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-12.jpg" alt="Работа №28">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-13.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-13_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-13.jpg" alt="Работа №29">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-14.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-14_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-14.jpg" alt="Работа №30">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-15.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-15_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-15.jpg" alt="Работа №31">
+              </picture>
+            </li>
+
+            <li class="services__work">
+              <picture class="services__thumb">
+                <source srcset="img/services/retouching/retouch__work-16.webp" media="(min-width: 1353px)">
+                <source srcset="img/services/retouching/retouch__work-16_1024.webp" media="(min-width: 577px)">
+                <img src="img/services/retouching/retouch__work-16.jpg" alt="Работа №32">
+              </picture>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MASTERS section -->
+    <section id="masters" class="masters">
+      <div class="container masters__container">
+
+        <h2 class="title masters__title">Мастер-классы</h2>
+
+        <div class="masters__main">
+          <figure class="masters__figure">
+            <picture class="masters__img">
+              <source srcset="img/masters/masters-1.webp" media="(min-width: 1025px)">
+              <source srcset="img/masters/masters-1_1024.webp" media="(min-width: 769px)">
+              <source srcset="img/masters/masters-1_768.webp" media="(min-width: 451px)">
+              <source srcset="img/masters/masters-1_320.webp" media="(min-width: 320px)">
+              <img src="img/masters/masters-1.jpg" alt="Мастер-класс №1">
+            </picture>
+            <figcaption class="masters__figcaption">
+              <div class="date masters__date">
+                <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#calendar" />
+                </svg>
+                <span class="date__day masters__day">8 июня</span>
+                <svg class="date__clocks" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#time" />
+                </svg>
+                <span class="date__day">15:00</span>
+              </div>
+              <span class="caption masters__caption">
+                Пленка для начинающих
+              </span>
+              <p class="parag masters__parag">
+                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                факта: семантический разбор внешних противодействий, в своём классическом представлении.
+              </p>
+              <a href="" class="btn btn__orange btn__entire">Узнать больше</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <ul class="masters__common">
+          <li class="masters__item">
+            <figure class="masters__figure">
+              <picture class="masters__thumb">
+                <source srcset="img/masters/masters-2.webp" media="(min-width: 1025px)">
+                <source srcset="img/masters/masters-2_1024.webp" media="(min-width: 320px)">
+                <img src="img/masters/masters-2.jpg" alt="Мастер-класс №2">
+              </picture>
+              <figcaption>
+                <div class="date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day masters__day">9 июня</span>
+                  <svg class="date__clocks" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#time" />
+                  </svg>
+                  <span class="date__day">15:00</span>
+                </div>
+                <a class="masters__link btn__entire" href="">Ретушь. Продвинутый уровень</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="masters__item">
+            <figure class="masters__figure">
+              <picture class="masters__thumb">
+                <source srcset="img/masters/masters-3.webp" media="(min-width: 1025px)">
+                <source srcset="img/masters/masters-3_1024.webp" media="(min-width: 320px)">
+                <img src="img/masters/masters-3.jpg" alt="Мастер-класс №3">
+              </picture>
+              <figcaption>
+                <div class="date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day masters__day">10 июня</span>
+                  <svg class="date__clocks" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#time" />
+                  </svg>
+                  <span class="date__day">16:00</span>
+                </div>
+                <a class="masters__link btn__entire" href="">Портретная съемка. Свет</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="masters__item">
+            <figure class="masters__figure">
+              <picture class="masters__thumb">
+                <source srcset="img/masters/masters-4.webp" media="(min-width: 1025px)">
+                <source srcset="img/masters/masters-4_1024.webp" media="(min-width: 320px)">
+                <img src="img/masters/masters-4.jpg" alt="Мастер-класс №4">
+              </picture>
+              <figcaption>
+                <div class="date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day masters__day">11 июня</span>
+                  <svg class="date__clocks" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#time" />
+                  </svg>
+                  <span class="date__day">16:00</span>
+                </div>
+                <a class="masters__link btn__entire" href="">Макросъемка. Проблемы и нюансы</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="masters__item">
+            <figure class="masters__figure">
+              <picture class="masters__thumb">
+                <source srcset="img/masters/masters-5.webp" media="(min-width: 1025px)">
+                <source srcset="img/masters/masters-5_1024.webp" media="(min-width: 320px)">
+                <img src="img/masters/masters-5.jpg" alt="Мастер-класс №5">
+              </picture>
+              <figcaption>
+                <div class="date">
+                  <svg class="date__calendar" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#calendar" />
+                  </svg>
+                  <span class="date__day masters__day">13 июня</span>
+                  <svg class="date__clocks" width="12" height="14" viewBox="0 0 12 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite.svg#time" />
+                  </svg>
+                  <span class="date__day">18:00</span>
+                </div>
+                <a class="masters__link btn__entire" href="">Творческая ретушь для начинающих</a>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- CONTACTS section -->
+    <section id="contacts" class="contacts">
+
+      <div class="container contacts__container">
+
+        <h2 class="title contacts__title">Контакты</h2>
+
+        <div class="contacts__left">
+          <div id="map" class="map contacts__map" aria-label="Открыть адрес по клику на карту"></div>
+
+          <div class="contacts__desc">
+
+            <span class="caption contacts__caption">Студия “High pass”</span>
+
+            <address class="contacts__address">
+              107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82
+              <a aria-label="телефон 849542423532" class="contacts__tel contacts__tel_tablet" href="tel:+749542423532">
+                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#phone" />
+                </svg>
+                +7 (495) 42-423-532
+              </a>
+            </address>
+
+            <a aria-label="телефон 849542423532" class="contacts__tel contacts__tel_desk" href="tel:+749542423532">
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#phone" />
+              </svg>
+              +7 (495) 42-423-532
+            </a>
+
+            <button class="contacts__close" type="button" aria-label="Кнопка закрытия адреса">
+              <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#close" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="contacts__right">
+
+          <strong class="caption contacts__caption">Оставить заявку</strong>
+
+          <span class="content contacts__content">Оставьте ваши данные, указав в графе “Комментарий” желаемые время и
+            дату съемки или другого мероприятия</span>
+
+          <form class="contacts__form">
+            <label class="contacts__label">
+              <span class="contacts__hint" aria-label="Подсказка: недопустимые символы в поле имени">Недопустимый
+                формат</span>
+              <input class="field contacts__field contacts__inp_name" type="text" placeholder="Имя" required
+                aria-label="Введите имя">
+            </label>
+
+            <label class="contacts__label">
+              <span class="contacts__hint" aria-label="Подсказка: недопустимый формат почты">Недопустимый формат</span>
+              <input class="field contacts__field contacts__inp_mail" type="email" placeholder="E-mail" required
+                aria-label="Введите почту">
+            </label>
+
+            <textarea class="field contacts__field contacts__area" cols="30" rows="10"
+              placeholder="Комментарий"></textarea>
+
+            <button class="btn btn__orange contacts__btn">Отправить</button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER section -->
+  <footer class="footer">
+    <div class="container footer__container footer__container_desk">
+      <div class="footer__left footer__left_desk">
+        <img class="logo footer__logo" src="img/sprite.svg#logo" alt="Логотип">
+        <span class="footer__company">Фотостудия High pass® 2018-2020</span>
+      </div>
+
+      <blockquote class="footer__quote">
+        <p class="content footer__text">Которая из моих фотографий самая любимая? Та, которую я собираюсь снять завтра.
+        </p>
+        <cite class="footer__name">© Имоджен Каннингем</cite>
+      </blockquote>
+
+      <div class="footer__right">
+
+        <span class="footer__more">Больше интересного:</span>
+
+        <ul class="networks">
+          <li class="networks__item">
+            <a href="" aria-label="Ссылка на инстаграм">
+              <svg class="icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#inst" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="networks__item">
+            <a href="" aria-label="Ссылка на фейсбук">
+              <svg class="icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#fb" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="networks__item">
+            <a href="" aria-label="Ссылка на вконтакте">
+              <svg class="icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#vk" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer__mobile">
+      <div class="container footer__container footer__container_tablet">
+
+        <div class="footer__left footer__left_mobile">
+          <img class="logo footer__logo" src="img/sprite.svg#logo" alt="Логотип">
+          <span class="footer__company">Фотостудия High pass® 2018-2020</span>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
