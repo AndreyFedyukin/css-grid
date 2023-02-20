@@ -1,9 +1,0 @@
-@media (max-width: 1024px) {
-  .header__menu-social {
-    display: none;
-  }
-  .header__menu-search {
-    display: flex;
-    justify-content: end;
-  }
-}
