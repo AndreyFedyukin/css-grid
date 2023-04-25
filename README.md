@@ -11,8 +11,8 @@
 - HTML
 - CSS
 - JavaScript
-- Swiper JS
-- JQuery accordion
+- API Яндекс.Карт
+- methodology BEM
 
 ___
 
