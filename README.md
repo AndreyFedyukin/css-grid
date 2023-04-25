@@ -13,6 +13,8 @@
 - JavaScript
 - API Яндекс.Карт
 - methodology BEM
+- CSS-Grid
+- Pixel Perfect
 
 ___
 
