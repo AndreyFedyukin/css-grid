@@ -52,7 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			center: [55.76963601332982, 37.63668850000002],
 			// Уровень масштабирования. Допустимые значения:
 			// от 0 (весь мир) до 19.
-			zoom: 17
+			zoom: 17,
+      controls: [] //убираем элементы управления с карты.
 		});
 
 		// Создание геообъекта с типом точка (метка).
@@ -69,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			{
 				iconLayout: 'default#image',
 				iconImageHref: 'img/sprite.svg#map',
-				iconImageSize: [12, 12],
+				iconImageSize: [40, 40],
 				balloonImageSize: [0, 0],
 			});
 
