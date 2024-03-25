@@ -2,7 +2,7 @@
 
 # Верстка сайта "High pass". /Skillbox/
 
-Ссылка на сайт - <https://andreyfedyukin.github.io/CSS-grid/>
+Ссылка на сайт - <https://andreyfedyukin.github.io/css-grid/>
 
 ---
 
